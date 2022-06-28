@@ -1,0 +1,106 @@
+body {
+    background: #ecf0f5 !important;
+}
+
+.appLayout {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.appLayout .sideBar {
+    background: #222d32;
+    width: 230px;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.appLayout .sideBar.mini {
+    width: 70px;
+}
+
+.appLayout .sideBar .menuItem > a {
+    position: relative;
+}
+
+.appLayout .sideBar .menuItem > a:hover .textContent{
+    opacity: 1;
+    display: flex;
+}
+
+.appLayout .sideBar.mini .menuItem:hover > ul {
+    display: block;
+    position: absolute;
+    max-height: 100%;
+    opacity: 1;
+    overflow: auto;
+    left: 70px;
+    width: 240px;
+    background: #2c3b41;
+}
+
+.appLayout .sideBar .menuItem .textContent {
+    /*opacity: 1;*/
+    /*max-height: 35px;*/
+    /*transition-delay: .3s;*/
+    /*transition-property: all;*/
+}
+
+.appLayout .sideBar.mini .menuItem .textContent {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    top: 0;
+    left: 100%;
+    width: 240px;
+    background: #1e282c;
+    padding: 12px;
+}
+
+.appLayout .sideBar.mini .menuItem ul svg {
+    display: none;
+    width: 0;
+}
+
+.appLayout .sideBar.mini .menuItem a {
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.appLayout .appSide {
+    background: antiquewhite;
+    display: flex;
+    flex: 1;
+}
+
+.appBar {
+    height: 50px;
+    width: 100%;
+    background: #3c8dbc;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    column-gap: 5px;
+}
+
+.appBar a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.appBar a:hover {
+    background: #367fa9;
+}
+
+.appBar a.full {
+    flex: 1;
+}
+
+ul {
+    padding: 0;
+}
